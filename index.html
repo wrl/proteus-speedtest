@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<title>proteus speedtest</title>
+		<script type="text/javascript" src="cryptobox.js"></script>
+		<script type="text/javascript">
+			function run_test() {
+				var res = [];
+
+				for (var i = 0; i < 1000; i++)
+					res.push(Proteus.keys.KeyPair.new());
+
+				console.log("Generated " + res.length + " keypairs.");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
